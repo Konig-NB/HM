@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&family=Roboto:wght@100;300;400;500;700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+:root{
+    --main-color: #b3b1b1;
+    --black:#13131a;
+    --bg:#010103;
+    --border:.2rem solid rgba(184, 173, 173, 0.3);
+}
+html{
+    font-size: 60.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+html::-webkit-scrollbar{
+    width: .8rem;
+}
+html::-webkit-scrollbar-track{
+    background: transparent;
+}
+html::-webkit-scrollbar-thumb{
+    background: #fff;
+    border-radius: 5rem;
+}
+/*================================================SIDEBAR========================================*/
+.sidebar{
+    position: absolute;
+    background: #312450;
+    width: 27.5rem;
+    height: 100vh;
+    text-align: right;
+    top: 0; left: 0;
+    padding: 2.5em 2.5em 0.5em 2.5em ;
+    position: fixed;
+}
+.sidebar .inner{
+    padding-top: 20rem;
+}
+.sidebar .inner ul{
+    list-style: none;
+	padding: 0;
+}
+.sidebar .inner ul li{
+    margin: 1.5em 0 0 0;
+    opacity: 1;
+    padding-bottom: 1.8rem;
+    border-bottom: var(--border);
+    position: relative;
+}
+.sidebar .inner ul li a{
+    font-size: 1.8rem;
+    color: var(--main-color);
+    text-decoration: none;
+    font-family: "Courier New", monospace;
+}
+.sidebar .inner ul li a:hover{
+    color: rgba(134, 126, 126, 0.55);
+}
+/*================================================WELCOME========================================*/
+#wrapper {
+    position: relative;
+    background-color: #5e42a6;
+    margin-left: 21%;
+    height: 78rem;
+}
+#wrapper .inner{
+    padding-left: 8rem;
+    color: #fff;
+}
+#wrapper .inner h1{
+    padding-top: 16%;
+    font-size: 5rem;
+}
+#wrapper .inner p{
+    padding-top: 2%;
+    padding-bottom: 3%;
+    font-size: 2rem;
+    color: var(--main-color);
+}
+#wrapper .inner .actions{
+    list-style: none;
+    cursor: pointer;
+}
+#wrapper .inner .actions li{
+    border: .1rem solid rgba(184, 173, 173, 0.3);
+    width: 9rem;
+    height: 1rem;
+    border-radius: 25px;
+    padding: 2rem 5.5rem;
+    background-color: #5e42a6;
+    color: #fff;
+    transform: scaleX(1);
+    transform-origin: center;
+    transition: 0.8s;
+}
+#wrapper .inner .actions a{
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: #fff;
+}
+#wrapper .inner .actions li:hover {
+    border: .1rem solid rgba(184, 173, 173, 0.3);
+    color: #fff;
+    transform: scaleX(1.2);
+    transform-origin: center;
+    transition: 0.8s;
+}
+/*================================================MEDIA========================================*/
+@media(max-width:1400px){
+    .sidebar{
+        background: #312450;
+        height: 5vh;
+        width: 250vh;
+        display: flex;
+        position: fixed;
+        padding-bottom: 2.5rem;
+    }
+    .sidebar .inner{
+        padding-top: 0rem;
+    }
+    .sidebar .inner ul{
+        display: flex;
+        margin-left: 1rem;
+    }
+    .sidebar .inner ul li{
+        justify-content: center;
+        border: none;
+        margin-left: 5rem;
+    }
+    #wrapper {
+        margin-top: 7rem;
+        margin-left: 0;
+    }
+}
+@media(max-width:870px){
+
+}
+@media(max-width:685px){
+    .sidebar{
+        display: none;
+    }
+    #wrapper{
+        margin-top: 0;
+    }
+    .street{
+        padding: 0 2.5rem;
+    }
+    .street p{
+        margin-top: 26rem;
+        position: relative;
+        margin-left: -32rem;
+        padding-bottom: 1.5rem;
+    }
+    .two .pic #pic3{
+        width: 20rem;
+    }
+    .pic h1{
+        margin-left: -50px;
+    }
+    .pic img{
+        margin-left: -80px;
+    }
+}
+
+/*================================================ONE========================================*/
+.street{
+    background: rgb(100, 100, 208);
+    margin-top: 40.5rem;
+    display: flex;
+}
+.street img{
+    height: 45rem;
+    width: 80rem;
+    padding-right: 2rem;
+}
+.street p{
+    padding-top: 20rem;
+    font-size: 2rem;
+    color: var(--main-color);
+}
+#street2{
+    margin-top: 0rem;
+    background: rgb(88, 88, 228);
+}
+#street3{
+    margin-top: 0rem;
+    background: rgb(50, 50, 155);
+}
+/*================================================TWO========================================*/
+#two{
+    background: rgb(214, 93, 184);
+    padding: 0 3rem;
+    color: var(--main-color);
+    padding-bottom: 5rem;
+}
+#two h1{
+    padding-top: 5rem;
+    font-size: 3.5rem;
+    color: #fff;
+    padding-bottom: 1rem;
+    padding-left: 3rem;
+}
+#two p{
+    font-size: 1.5rem;
+    padding-bottom: 5rem;
+    padding-left: 3rem;
+}
+#two .skill{
+    display: flex;
+    justify-content: space-evenly;
+}
+#two .skills{
+    height: 20rem;
+    border: var(--border);
+    width: 50rem;
+}
+#two .skills span{
+    font-size: 2.5rem;
+    color: #fff;
+}
+#two .skills p{
+    padding-top: 5rem;
+    font-size: 1.5rem;
+}
+.pic{
+    padding: 0.5rem 12rem;
+}
+.pic h1{
+    text-align: center;
+}
+.pic img{
+    height: 40rem;
+    width: 30rem;
+}
+/*================================================THREE========================================*/
+#three{
+    background: #5e42a6;
+    padding: 3rem 5rem;
+    color: var(--main-color);
+}
+#three h1{
+    font-size: 3.5rem;
+    color: #fff;
+    padding-bottom: 1rem;
+}
+#three p{
+    font-size: 1.5rem;
+}
+.send{
+    padding-top: 5rem;
+}
+.send .sen label{
+    font-size: 1.5rem;
+    padding-bottom: 2rem;
+}
+.send .sen input{
+    height: 3rem;
+    width: 30rem;
+    background: none;
+    border: var(--border);
+    border-radius: 10px;
+    padding: 0 2rem;
+    color: var(--main-color);
+    display: block;
+}
+#three button{
+    margin-top: 4rem;
+    height: 5rem;
+    width: 15rem;
+    background: none;
+    border: var(--border);
+    border-radius: 10px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #fff;
+    transition: 0.5s;
+}
+#three button:hover{
+    letter-spacing: 2px;
+}
